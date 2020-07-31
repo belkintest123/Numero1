@@ -28,6 +28,7 @@
 
 
 import XCTest
+
 @testable import Numero
 
 class ConverterTests: XCTestCase {
