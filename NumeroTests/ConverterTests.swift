@@ -32,22 +32,21 @@ import XCTest
 @testable import Numero
 
 class ConverterTests: XCTestCase {
-  
-  let converter = Converter()
-  
+    var converter: Converter!
+
   override func setUp() {
     super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    converter = Converter()
   }
-  
+
   override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    converter = nil
     super.tearDown()
   }
   
   func testConversionForOne() {
     let result = converter.convert(1)
-    XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
+    XCTAssertEqual(result, "II", "Conversion for 1 is incorrect")
   }
   
   func testConversionForTwo() {
